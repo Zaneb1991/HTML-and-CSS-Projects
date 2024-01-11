@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LEGO Website</title>
+    <style>
+        body {
+            font: Ariel;
+            background-color: yellow;
+			text-align: center;
+        }
+        header, section, footer {
+            padding: 20px;
+            background-color: CornflowerBlue;
+            color: white;
+			text-align: center;
+        }
+        nav {
+            background-color: LimeGreen;
+            padding: 10px;
+			text-align: center;
+        }
+        nav a {
+            color: black;
+            margin-right: 15px;
+			text-align: center;
+        }
+        section {
+            margin: 20px;
+			text-align: center;
+        }
+        footer {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>LEGO</h1>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#pictures">Our Builds</a>
+        <a href="#contact">Get In Touch</a>
+        <a href="#videos">Videos</a>
+    </nav>
+
+    <section id="home">
+        <h2>Welcome to Our LEGO World</h2>
+        <p>Keep the child inside alive and create the imaginable<br>
+		</p>
+    </section>
+
+    <section id="pictures">
+        <h2>Amazing LEGO Builds</h2>
+        <img src="C:\Users\zaneb\OneDrive\Documents\GitHub\HTML-and-CSS-Projects\One_Page_Website/nightmare_before_christmas.jpg" alt="Nightmare Before Christmas" width="300" height="200">
+        <img src="C:\Users\zaneb\OneDrive\Documents\GitHub\HTML-and-CSS-Projects\One_Page_Website/Tree_House.jpg" alt="Tree House" width="300" height="200">
+		<img src="C:\Users\zaneb\OneDrive\Documents\GitHub\HTML-and-CSS-Projects\One_Page_Website/Parrot.jpg" alt="Parrot" width="300" height="200">
+		<img src="C:\Users\zaneb\OneDrive\Documents\GitHub\HTML-and-CSS-Projects\One_Page_Website/Gruffalo.jpg" alt="Gruffalo" width="300" height="200">
+		<img src="C:\Users\zaneb\OneDrive\Documents\GitHub\HTML-and-CSS-Projects\One_Page_Website/Sports_Car.jpg" alt="Car" width="300" height="200">
+		<img src="C:\Users\zaneb\OneDrive\Documents\GitHub\HTML-and-CSS-Projects\One_Page_Website/Globe.jpg" alt="The World" width="300" height="200">
+		<img src="C:\Users\zaneb\OneDrive\Documents\GitHub\HTML-and-CSS-Projects\One_Page_Website/Red_Ridinghood_Wolf.jpg" alt="Red Ridinghood" width="300" height="200">
+		<img src="C:\Users\zaneb\OneDrive\Documents\GitHub\HTML-and-CSS-Projects\One_Page_Website/insects.jpg" alt="Bugs" width="300" height="200">
+    </section>
+
+    <section id="contact">
+        <h2>SHARE YOUR IDEAS</h2>
+        <form action="/submit_form" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <section id="videos">
+        <h2>Most Lego Pieces 11,695</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/FodBQChvWnA?si=rCyFSQ0X5xlReMIa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 &nbsp;|&nbsp; LEGO Website.</p>
+    </footer>
+
+</body>
+</html>
