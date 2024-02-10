@@ -1,0 +1,37 @@
+/*--------------------------------
+CSS
+--------------------------------*/
+html {
+    body {
+        font: Ariel;
+        background-color: yellow;
+        text-align: center;
+    }
+    header, section, footer {
+        padding: 20px;
+        background-color: CornflowerBlue;
+        color: white;
+        text-align: center;
+    }
+    nav {
+        background-color: LimeGreen;
+        padding: 10px;
+        text-align: center;
+    }
+    nav a {
+        color: black;
+        margin-right: 15px;
+        text-align: center;
+    }
+    section {
+        width: 95%;
+        margin: 20px;
+        text-align: center;
+        border: dashed red 4px;
+        border-radius: 10px;
+    }
+    footer {
+        text-align: center;
+    }
+}
+
