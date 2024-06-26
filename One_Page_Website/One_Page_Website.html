@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LEGO Website</title>
+    <link rel="stylesheet" href="CSS/One_Page_Website.css">
+</head>
+
+<body>
+
+        <header>
+            <h1>LEGO</h1>
+        </header>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#pictures">Our Builds</a>
+            <a href="#contact">Get In Touch</a>
+            <a href="#videos">Videos</a>
+        </nav>
+
+        <section id="home">
+            <h2>Welcome to Our LEGO World</h2>
+            <p>Keep the child inside alive and create the imaginable<br>
+            </p>
+        </section>
+
+        <section id="pictures">
+            <h2>Amazing LEGO Builds</h2>
+            <!-- Images used to open the lightbox -->
+            <div class="row">
+            <div class="column">
+                <img src="nightmare_before_christmas.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" width="300" height="200">
+            </div>
+            <div class="column">
+                <img src="Tree_House.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow" width="300" height="200">
+            </div>
+            <div class="column">
+                <img src="Parrot.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow" width="300" height="200">
+            </div>
+            <div class="column">
+                <img src="Gruffalo.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow" width="300" height="200">
+            </div>
+            <div class="column">
+                <img src="Sports_Car.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow" width="300" height="200">
+            </div>
+            <div class="column">
+                <img src="Globe.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow" width="300" height="200">
+            </div>
+            <div class="column">
+                <img src="Red_Ridinghood_Wolf.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow" width="300" height="200">
+            </div>
+            <div class="column">
+                <img src="insects.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow" width="300" height="200">
+            </div>
+            </div>
+
+            <!-- The Modal/Lightbox -->
+            <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+                <div class="mySlides">
+                <div class="numbertext">1 / 8</div>
+                <img src="nightmare_before_christmas_wide.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                <div class="numbertext">2 / 8</div>
+                <img src="Tree_House_wide.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                <div class="numbertext">3 / 8</div>
+                <img src="Parrot_wide.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                <div class="numbertext">4 / 8</div>
+                <img src="Gruffalo_wide.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                <div class="numbertext">5 / 8</div>
+                <img src="Sports_Car_wide.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                <div class="numbertext">6 / 8</div>
+                <img src="Globe_wide.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                <div class="numbertext">7 / 8</div>
+                <img src="Red_Ridinghood_Wolf_wide.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                <div class="numbertext">8 / 8</div>
+                <img src="insects_wide.jpg" style="width:100%">
+                </div>
+
+                <!-- Next/previous controls -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <!-- Caption text -->
+                <div class="caption-container">
+                <p id="caption"></p>
+                </div>
+
+                <!-- Thumbnail image controls -->
+                <div class="column">
+                <img class="demo" src="nightmare_before_christmas.jpg" onclick="currentSlide(1)" alt="Nightmare Before Christmas">
+                </div>
+
+                <div class="column">
+                <img class="demo" src="Tree_House.jpg" onclick="currentSlide(2)" alt="Tree House">
+                </div>
+
+                <div class="column">
+                <img class="demo" src="Parrot.jpg" onclick="currentSlide(3)" alt="Parrot">
+                </div>
+
+                <div class="column">
+                <img class="demo" src="Gruffalo.jpg" onclick="currentSlide(4)" alt="Gruffalo">
+                </div>
+
+                <div class="column">
+                <img class="demo" src="Sports_Car.jpg" onclick="currentSlide(5)" alt="Car">
+                </div>
+
+                <div class="column">
+                <img class="demo" src="Globe.jpg" onclick="currentSlide(6)" alt="The World">
+                </div>
+
+                <div class="column">
+                <img class="demo" src="Red_Ridinghood_Wolf.jpg" onclick="currentSlide(7)" alt="Red Ridinghood">
+                </div>
+
+                <div class="column">
+                <img class="demo" src="insects.jpg" onclick="currentSlide(8)" alt="Bugs">
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>SHARE YOUR IDEAS</h2>
+            <form action="/submit_form" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+
+        <section id="videos">
+            <h2>Most Lego Pieces 11,695</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/FodBQChvWnA?si=rCyFSQ0X5xlReMIa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 &nbsp;|&nbsp; LEGO Website.</p>
+        </footer>
+
+        <script src="JS/One_Page_Website.js"></script>
+    </body>
+</html>
