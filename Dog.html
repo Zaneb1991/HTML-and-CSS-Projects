@@ -2,20 +2,42 @@
 <html lang="en">
 	<head>
 		<title>Dogs</title>
-		<meta charset="utf-8"
+		<meta charset="utf-8">
+		<meta name="viewport" width=device-width, initial-scale="1">
+		<style>
+			@keyframes zoominoutsinglefeatured {
+				0% {
+					transform: scale(1,1);
+				}
+				50% {
+					transform: scale(1.2,1.2);
+				}
+				100% {
+					transform: scale(1,1);
+				}
+			}
+
+			.single-featured-image-header img {
+				animation: zoominoutsinglefeatured 15s forwards;
+			}
+		</style>
 	</head>
+
 	<body>
-	<p>All About Dogs</p>
-	<img src=C:\Users\zaneb\OneDrive\Documents\GitHub\HTML-and-CSS-Projects\Pooch.jpg>
-<a href=Assignment.html>Home</a>
-	</body>
-<footer> 
-	<nav>
+		<p>All About Dogs</p>
+		<div class="single-featured-image-header">
+			<img src=C:\Users\zaneb\OneDrive\Documents\GitHub\HTML-and-CSS-Projects\Pooch.jpg>
+		</div>
 		<a href=Assignment.html>Home</a>
-		<a href=Dog.html>Dog Picture</a>
-		<a href=Dog_Video.html>Dog Video</a>
-	</nav>
-Created by Zaneb Pace
-</footer>
+	</body>
+
+	<footer> 
+		<nav>
+			<a href=Assignment.html>Home</a>
+			<a href=Dog.html>Dog Picture</a>
+			<a href=Dog_Video.html>Dog Video</a>
+		</nav>
+		Created by Zaneb Pace
+	</footer>
+
 </html>
-	
