@@ -7,6 +7,39 @@
 		<link rel="stylesheet" href=".CSS/Animation.css">
 	</head>
 	<body>
+		<script>
+			document.body.classList.add('fade-out');
+			
+			window.addEventListener('DOMContentLoaded', () => {
+				document.body.classList.remove('fade-out');
+			});
+
+			function validateForm() {
+      			let form = document.forms["myForm"];
+      			let firstName = form["firstName"].value;
+      			let lastName = form["lastName"].value;
+      			let email = form["email"].value;
+      			let mobile = form["mobile"].value;
+
+      			if (firstName == "") {
+        			alert("First name must be filled out");
+        			return false;
+      			}
+      			if (lastName == "") {
+        			alert("Last name must be filled out");
+        			return false;
+      			}
+      			if (email == "") {
+        			alert("Email must be filled out");
+        			return false;
+      			}
+      			if (mobile == "") {
+        			alert("Mobile number must be filled out");
+        			return false;
+      			}
+      			return true;
+    		}
+		</script>
 
 		<!-- NAV -->
 		<div class="wrap">
@@ -307,10 +340,11 @@
 							Come Show Your Support
 						</p>
 						<div class="form-join">
-							<form action="" method="post">
-								<input class="rsvp" type="text"	value="" placeholder="First Name">
-								<input class="rsvp" type="text" value="" placeholder="Last Name">
-								<input class="rsvp" type="text" Value="" placeholder="Email Address">
+							<form name="myForm" onsubmit="return validateForm()" method="post">
+								<input class="rsvp" type="text"	name="firstName" placeholder="First Name">
+								<input class="rsvp" type="text" name="lastName" placeholder="Last Name">
+								<input class="rsvp" type="text" name="email" placeholder="Email Address">
+								<input class="rsvp" type="text" name="mobile" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"placeholder="Mobile Number" required>
 								<div class="form-spacer">
 									<label class="terms">Terms and Conditions</label>
 								</div>
