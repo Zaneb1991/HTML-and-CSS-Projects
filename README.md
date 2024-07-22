@@ -12,6 +12,15 @@ This is where I used CSS to design a website for the Pokemon fan world, for coll
 # My Portfolio
 This is where a more professional look was given to show my skills aquired during my course.
 
+# Calculator
+This is where I made a 4 function calculator that could Add, Subtract, Multiply, Divide.
+
+# Tic-Tac-Toe
+I made an interactive Player VS Computer Game, with sound effects/Graphics to show the Winning Line.
+
+# Pizza Menu
+I made a Pizza Menu Page with check boxes and calculations to give you a subtotal amount of your order.
+
 Within these are also small tasks that challenged my knowledge of the subjects I have worked on, such as:
 - Effecting Images with CSS
 - Trial with Javascript
